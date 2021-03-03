@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  iost:
+    image: iostio/iost-node
+    container_name: "iost_test"
+    tty: true
+    volumes: 
+      - ./work/:/work
+    working_dir: "/work"
+    ports:
+      - 30000-30003:30000-30003
+    
